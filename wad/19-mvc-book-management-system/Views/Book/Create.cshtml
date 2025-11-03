@@ -1,0 +1,35 @@
+@model WebApplication18.Models.Book
+
+<h2>Add New Book</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.book_name)
+    <br />
+
+    @Html.TextBoxFor(m => m.book_name)
+    @Html.ValidationMessageFor(m => m.book_name)
+    <br />
+
+    <br />
+
+    @Html.LabelFor(m => m.author)
+    <br />
+
+    @Html.TextBoxFor(m => m.author)
+    @Html.ValidationMessageFor(m => m.author)
+    <br />
+
+    <br />
+
+    @Html.LabelFor(m => m.price)
+    <br />
+
+    @Html.TextBoxFor(m => m.price)
+    @Html.ValidationMessageFor(m => m.price)
+    <br />
+
+    <br />
+
+    <input type="submit" value="Add Book" />
+}

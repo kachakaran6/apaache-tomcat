@@ -1,0 +1,34 @@
+@model WebApplication18.Models.Book
+
+<h2>Edit Book</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.book_id)
+
+    @Html.LabelFor(m => m.book_name)
+    <br />
+
+    @Html.TextBoxFor(m => m.book_name)
+    <br />
+
+    <br />
+
+    @Html.LabelFor(m => m.author)
+    <br />
+
+    @Html.TextBoxFor(m => m.author)
+    <br />
+
+    <br />
+
+    @Html.LabelFor(m => m.price)
+    <br />
+
+    @Html.TextBoxFor(m => m.price)
+    <br />
+
+    <br />
+
+    <input type="submit" value="Update Book" />
+}
