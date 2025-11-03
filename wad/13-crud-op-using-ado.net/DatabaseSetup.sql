@@ -1,0 +1,12 @@
+CREATE DATABASE StudentDB;
+GO
+
+USE StudentDB;
+GO
+
+CREATE TABLE [dbo].[info] (
+    [Id] INT IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (50) NOT NULL,
+    [Password] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
